@@ -56,7 +56,9 @@ setup(
     },
     entry_points = {
         'console_scripts': [
-            'sak = src.__main__:main'
+            # setup multiple entrypoints
+            # 'sak = src.cli:app2',
+            'sak = src.__main__:main',
         ]
     },
 )
