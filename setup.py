@@ -36,6 +36,7 @@ setup(
     install_requires=[
         'doit',
         'click',
+        'pylint',
     ],
 
     keywords='remove watermark',
@@ -55,7 +56,7 @@ setup(
     },
     entry_points = {
         'console_scripts': [
-            'doit = doit.__main__:main'
+            'sak = src.__main__:main'
         ]
     },
 )

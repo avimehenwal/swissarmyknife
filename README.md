@@ -13,6 +13,9 @@
 python3 -m venv venv
 source venv/bin/activate.fish
 pip install --upgrade pip
+
+python setup.py develop
+sak --count=5
 ```
 
 ### Problems
