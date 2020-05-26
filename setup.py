@@ -26,9 +26,9 @@ setup(
     description='remove watermark',
     long_description = long_description,
     project_urls = {
-        'Documentation': 'https://pydoit.org/',
-        'Source': 'https://github.com/pydoit/doit/',
-        'Tracker': 'https://github.com/pydoit/doit/issues',
+        'Documentation': 'https://github.com/avimehenwal/swissarmyknife',
+        'Source': 'https://github.com/avimehenwal/swissarmyknife',
+        'Tracker': 'https://github.com/avimehenwal/swissarmyknife/issues',
     },
 
     packages=find_packages(),
