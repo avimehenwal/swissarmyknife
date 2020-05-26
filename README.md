@@ -23,6 +23,41 @@ sak --count=5
 1. How to package, publish and distribute app?
 2. Which build tool to use?
 
+```mermaid
+graph TD
+License  --> R([CLI App])
+setup.py --> R
+tox.ini  --> R
+dodo.py  --> R
+
+R ==> src
+R ==> docs
+R ==> tests
+
+id1((This is the text in the circle))
+
+classDef default fill:#f9f,stroke:#333,stroke-width:4px;
+linkStyle default fill:none,stroke-width:2px,stroke:blue
+```
+
+```mermaid
+graph TD
+A[fa:fa-university Event Publishing Service ] -->|publishes to topic| C[fa:fa-bullhorn Topic for new events ]
+A -->|writes data to|I[fa:fa-shopping-cart Dump Event Bucket ]
+C -->|Terminal Update SQS Message| D[fa:fa-bars Event Receiver Queue ]
+C -->|Terminal Update SQS Message| E[fa:fa-bars Some Other Service Queue ]
+D -->|consumes|G[fa:fa-beer Event Receiver Service Consumer ]
+E -->|consumes|H[fa:fa-beer Some Other Event Consumer ]
+
+B["fa:fa-twitter for peace"]
+B-->C[fa:fa-ban forbidden]
+B-->D(fa:fa-spinner);
+B-->E(A fa:fa-camera-retro perhaps?);
+
+```
+
+
+
 [click]: https://github.com/pallets/click
 
 
